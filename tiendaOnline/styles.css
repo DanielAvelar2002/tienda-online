@@ -64,7 +64,6 @@ header {
     font-size: 12px;
 }
 
-
 .container-cart-products {
     position: absolute;
     top: 50px;
@@ -137,10 +136,8 @@ header {
     display: none;
 }
 
-
 /*Main*/
-.container-items {
-    
+.container-items {    
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     /*para que aparezcan 3 items*/
