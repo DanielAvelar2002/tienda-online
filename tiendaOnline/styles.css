@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+h1{
+    font-family: "Sentinel SSm A", "Sentinel SSm B", serif;
+}
+
 body {
     margin: 0 auto;
     max-width: 1200px;
@@ -20,8 +24,6 @@ body {
     width: 40px;
     height: 40px;
     stroke: #000;
-
-
 }
 
 .icon-cart:hover {
@@ -42,7 +44,6 @@ header {
 
 .container-icon {
     position: relative;
-
 }
 
 .count-products {
@@ -69,7 +70,7 @@ header {
     top: 50px;
     right: 0;
     background-color: #fff;
-    width: 400px;
+    width: 500px;
     z-index: 1;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
     border-radius: 10px;
@@ -78,8 +79,8 @@ header {
 .cart-product {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 30px;
+    justify-content: space-around;
+    padding: 20px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.20);
 }
 
@@ -102,7 +103,6 @@ header {
 .cantidad-producto-carrito {
     font-weight: 400;
     font-size: 20px;
-
 }
 
 .icon-close {
@@ -138,15 +138,13 @@ header {
 }
 
 
-
 /*Main*/
 .container-items {
+    
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     /*para que aparezcan 3 items*/
     gap: 50px;
-
-
 }
 
 .item {
@@ -157,7 +155,6 @@ header {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
     /*para el efecto de sombra*/
 }
-
 
 .item img {
     width: 100%;
@@ -177,7 +174,6 @@ pero no lo uso porque me gusta como se ve*/
 .item:hover img {
     transform: scale(1.2);
     /*para el zoom de la imagen*/
-
 }
 
 .info-product {
@@ -186,11 +182,12 @@ pero no lo uso porque me gusta como se ve*/
     display: flex;
     flex-direction: column;
     gap: 10px;
+    background-color: #eae5de;
+    border-radius: 0px 0px 10px 10px;
 }
 
 .price {
     font-size: 19px;
-
 }
 
 .info-product button {
@@ -200,4 +197,13 @@ pero no lo uso porque me gusta como se ve*/
     color: #fff;
     padding: 15px 10px;
     cursor: pointer;
+}
+
+.cart-empty{
+    padding: 20px;
+    text-align: center;
+}
+
+.hidden{
+    display: none;
 }
